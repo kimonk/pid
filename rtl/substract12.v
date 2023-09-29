@@ -1,6 +1,6 @@
 module subtractor(
-    input signal1,
-    input [7:0] input_pin,
+    input [11 : 0] signal1,
+    input [ 7 : 0] input_pin,
     output reg [31:0] result
 );
 

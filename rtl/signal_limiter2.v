@@ -1,4 +1,4 @@
-module signal_limiter (input             [31:0] clk,
+module signal_limiter (input                     clk,
 	               input signed      [31:0] signal_in,
                        output reg signed [31:0] signal_out
                       );

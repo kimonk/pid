@@ -1,5 +1,5 @@
 module triangular_signal(
-  input [31:0] clk,
+  input                    clk,
   output reg signed [31:0] triangular_output
 );
 
@@ -7,7 +7,7 @@ module triangular_signal(
   reg signed [31:0] cnt_reg = 0;
   reg direction = 1'b1;
 
-  always @(posedge clk[31]) begin
+  always @(posedge clk) begin
     if (cnt_reg == CNT_MAX - 1) begin
       direction <= ~direction;
       cnt_reg <= 0;

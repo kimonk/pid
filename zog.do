@@ -32,7 +32,7 @@ vlog -reportprogress 300 -work pid ./ip/adc_controller/synthesis/adc_controller.
 vlog -reportprogress 300 -work pid ./ip/adc_controller/synthesis/submodules/adc_controller_adc_mega_0.v
 vlog -reportprogress 300 -work pid ./ip/adc_controller/synthesis/submodules/altera_up_avalon_adv_adc.v
 #Start Simulation
-vsim pid.top
+vsim -voptargs=+acc pid.top
 
 #Add top-level signals
 #do router2router_wave.do
